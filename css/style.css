@@ -96,7 +96,8 @@ table, th, td{
   background-color: #0e65af; 
   color: white; 
   border-radius: 10px;
-  border: none; 
+  border: none;
+  margin: 10px; 
 }
 
 strong{
