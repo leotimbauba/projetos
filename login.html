@@ -1,177 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-
-/* Full-width input fields */
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-/* Set a style for all buttons */
-button {
-  background-color: #04AA6D;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  border-radius: 5px;
-}
-
-button:hover {
-  opacity: 0.8;
-}
-
-/* Extra styles for the cancel button*/
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-}
-
-/* Center the image and position the close button */
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-  position: relative;
-}
-
-img.avatar {
-  width: 15%;
-  border-radius: 50%;
-}
-
-.container {
-  padding: 16px;
-}
-
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  padding-top: 60px;
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  border-radius: 15px;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button (x) */
-.close {
-  position: absolute;
-  right: 25px;
-  top: 0;
-  color: #000;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #e7d3d3b7;
-  cursor: pointer;
-}
-
-/* Add Zoom Animation */
-.animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
-}
-
-@-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)} 
-  to {-webkit-transform: scale(1)}
-}
-  
-@keyframes animatezoom {
-  from {transform: scale(0)} 
-  to {transform: scale(1)}
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/escreva-se.css">
+    <title>Instagram/escreva-se</title>
+    
 </head>
 <body>
+    <div class="instagram-wrapper">
 
-<h2>Prisquição Optometríca</h2>
+        <div class="instagram-continue">
+            <div class="group">
+                <img src="./img/instagram-logo.png" class="instagram-logo" alt="instagram logo">
+                <div class="profile">
+                    <h4 class="descricao">Inscreva-se para ver fotos e videos de seus amigos.</h4>
+                </div>
+                <a href="login.html" class="instagram-login"><i class="fa fa-facebook"> Faça login com Facebook</i></a>
 
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+            <!--Linha do OU-->  
+                <p>
+                <hr>
+                </p>
+            <!--Linha do OU Fim-->    
+                <form class="form">
+                    <div class="input-group">
+                      <input type="text" class="form-control" name="email" placeholder="Número de celular ou e-mail">
+                    </div>
+                     <div class="input-group">
+                      <input type="text" class="form-control" name="nome" placeholder="Nome completo">
+                    </div>
+                     <div class="input-group">
+                      <input type="text" class="form-control" name="nome de usuario" placeholder="Nome de usuário">
+                    </div>
+                    <div class="input-group">
+                      <input type="password" class="form-control" name="password" placeholder="Senha">  
+                      
+                      <a href="#" class="instagram-cadastre">Inscrições</a>
 
-<div id="id01" class="modal">
-  
-  <form class="modal-content animate" action="/action_page.php" method="post">
-    <div class="imgcontainer">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="./imagem/transferir.jpg" alt="Avatar" class="avatar">
+                    </div>
+                    
+                  </form>
+                  <p class="descricao2">Ao se inscrever, você concorda com nossa Termos, <b>Política de Termos, e Política de Dados e Cookies.</p>
+            </div>
+            <div class="group-conecte">
+               <a href="index.html"><p>Tem uma conta?<span class="link-blue">Conecte-se</span></p></a>
+            </div>
+           
+        </div>
     </div>
-
-    <div class="container">
-      <label for="uname"><b>Usuario</b></label>
-      <input type="text" placeholder="Usuario" name="uname" required>
-
-      <label for="psw"><b>Senha</b></label>
-      <input type="password" placeholder="Senha" name="psw" required>
-        
-      <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-    </div>
-
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
-</div>
-
-<script>
-// Get the modal
-var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>
-
 </body>
 </html>
